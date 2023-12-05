@@ -1,0 +1,60 @@
+package 반복문;
+import java.util.*;
+public class 격투게임 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		Random r = new Random();
+		
+		int heroHp= 100; int enemyHp = 200;
+			
+		
+		
+		while(true) {
+			System.out.println("공격하려면 1을 누르세요. 그 외 숫자를 누르면 종료합니다.");
+			int input = s.nextInt();
+			
+			
+			
+			if(input==1) {
+				int heroPower= r.nextInt(11)+15;
+				enemyHp = enemyHp - heroPower ; 
+				
+			int enemyPower = r.nextInt(11)+5;
+			heroHp -= enemyPower;
+			
+			System.out.println("마법사 HP :" + heroHp +", 전사 HP:"+ enemyHp + "입니다");
+		if((heroHp<=0)&&(enemyHp<=0)) {
+			System.out.println("마법사와 전사가 동시에 죽었습니다.");break;
+		}
+		else if(heroHp<=0) {
+			System.out.println("마법사가 죽었습니다.");break;
+		}
+		else if(enemyHp<=0) {
+			System.out.println("전사가 죽었습니다.");break;
+		}
+	
+			}	
+			
+			else System.out.println("종료합니다.");
+			
+			
+		}
+		
+		
+		System.out.println("프로그램을 종료합니다.");
+		
+		
+		
+		
+		
+		
+
+	}
+
+	
+	
+	
+	
+}
