@@ -1,0 +1,18 @@
+package week02;
+
+import java.util.Random;
+
+public class wizard {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random a = new Random();
+	    int x =a.nextInt(11)+20;
+		
+			System.out.println("마법사에게 " + x + "의 공격력으로 적을 공격했습니다.");
+			
+		
+		
+
+	}
+
+}
