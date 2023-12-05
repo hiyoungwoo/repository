@@ -1,0 +1,76 @@
+package 반복문;
+
+import java.util.*;
+
+public class 가위바위보5판3선승 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Random r = new Random();
+		Scanner s = new Scanner(System.in);
+		int mywin = 0;
+		int comwin = 0;
+		int draw = 0;
+
+		for (int i = 1; i <= 5; i++) {
+
+			System.out.println("가위(1), 바위(2), 보(3), 포기(4) 를 입력하세요.");
+			int com = r.nextInt(3) + 1;
+			int me = s.nextInt();
+
+			if ((me == 1) && (com == 1)) {
+				System.out.println("나: 가위, 컴 : 가위 비겼습니다");
+				draw++;
+			}
+
+			else if ((me == 2) && (com == 2)) {
+				System.out.println("나: 바위, 컴 : 바위 비겼습니다.");
+				draw++;
+			} else if ((me == 3) && (com == 3)) {
+				System.out.println("나: 보, 컴 : 보 비겼습니다");
+				draw++;
+			}
+
+			else if ((me == 1) && (com == 3)) {
+				System.out.println("나: 가위, 컴 : 보 사용자가 이겼습니다");
+				mywin++;
+			} else if ((me == 2) && (com == 1)) {
+				System.out.println("나: 바위, 컴 : 가위 사용자가 이겼습니다.");
+				mywin++;
+			} else if ((me == 3) && (com == 2)) {
+				System.out.println("나: 보, 컴 : 바위 사용자가 이겼습니다");
+				mywin++;
+			}
+
+			else if ((me == 1) && (com == 2)) {
+				System.out.println("나: 가위, 컴 : 바위 컴퓨터가 이겼습니다");
+				comwin++;
+			} else if ((me == 2) && (com == 3)) {
+				System.out.println("나: 바위, 컴 : 보 컴퓨터가 이겼습니다.");
+				comwin++;
+			} else if ((me == 3) && (com == 1)) {
+				System.out.println("나: 보, 컴 : 가위 컴퓨터가 이겼습니다.");
+				comwin++;
+			}
+
+			else if (me == 4) 
+				break;
+		}
+		
+
+		if (mywin > comwin) {
+			System.out.println(mywin + ":" + comwin + "으로 내가 더 많이 이겼습니다.");
+		}
+
+		else if (mywin < comwin) {
+			System.out.println(comwin + ":" + mywin + "으로 컴퓨터가 더 많이 이겼습니다.");
+		}
+
+		else
+			System.out.println("비겼습니다");
+		
+		System.out.print("프로그램을 종료합니다.");
+	}
+
+	}
