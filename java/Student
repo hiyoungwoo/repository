@@ -1,0 +1,40 @@
+package week10;
+
+public class Student {
+	// 멤버변수(필드) = 객체 속성
+	String name; // 이름
+	int korean; // 국어
+	int english; // 영어
+	int math; // 수학
+	double avg; //평균
+
+	// 생성자 = 객체 생성 시 객체를 초기화 시켜주는 역할
+	public Student(String name, int korean, int english, int math) {
+		this.name = name;
+		this.korean = korean;
+		this.english = english;
+		this.math = math;
+		
+	}
+
+	// 메소드 = 객체 동작
+	public void studentavg() {
+		avg = (korean + english + math) / 3.0;
+	}
+
+	public void studenthead() {
+		avg = (korean + english + math) / 3;
+		if (avg >= 90)
+			System.out.println("A");
+		else if (avg >= 80)
+			System.out.println("B");
+		else if (avg >= 70)
+			System.out.println("C");
+		else if (avg >= 60)
+			System.out.println("D");
+		else if (avg <= 50)
+			System.out.println("F");
+
+	}
+
+}
