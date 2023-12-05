@@ -1,0 +1,22 @@
+package week03;
+
+public class MyProfile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a = "최영우";
+		int b = 20;
+	    long c = 20020928L;
+		double d = 177.0D;
+		String e = "영화보기";
+		
+		System.out.println("이름은?=>" + a);
+		System.out.println("나이는?=>" + b);
+		System.out.println("생년월일은?=>=" + c);
+		System.out.println("키는?=>" + d);
+		System.out.println("취미는?=>" +  e);
+		
+
+	}
+
+}
