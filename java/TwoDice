@@ -1,0 +1,23 @@
+package week02;
+
+import java.util.Random;
+
+public class TwoDice {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random a = new Random();
+	    int x =a.nextInt(6)+1;
+	    Random a1 = new Random();
+	    int y =a1.nextInt(6)+1;
+	    int c = x + y;
+	    
+	    
+	    System.out.println("주사위 1의 값은 :"+ x);
+	    System.out.println("주사위 2의 값은 :"+ y);
+	    System.out.println("주사위 1과 주사위 2 의 합은 ?"+c);
+   
+	
+	
+	
+	}
+}
