@@ -1,0 +1,22 @@
+package week03;
+import java.util.*;
+
+public class MyProfile5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner (System.in);
+		Random a = new Random();
+		int b = a.nextInt(6)+1;
+		
+		
+		System.out.println("첫 번쨰 숫자를 입력하세요 ( 1 ~ 6 사이 )");	
+		int c = s.nextInt();
+		
+		if ( b==c  )System.out.println(" 주사위 숫자를 맞췄습니다. ");
+		else 
+			System.out.println("주사위 숫자를 틀렸습니다.");
+		
+	}
+
+}
