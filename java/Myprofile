@@ -1,0 +1,14 @@
+package week02;
+
+public class Myprofile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub 
+		System.out.println("저의 이름은 최영우 \n생년월일은 20020928\n집 주소는 서울 구로구 고척2동\n취미는 영화보기 입니다.");
+		
+		
+		
+		
+	}
+
+}
