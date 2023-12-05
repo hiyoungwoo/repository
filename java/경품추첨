@@ -1,0 +1,44 @@
+package 반복문;
+import java.util.*;
+public class 경품추첨 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Random r = new Random();
+
+int one = r.nextInt(100)+1;
+
+int two = r.nextInt(100)+1;
+while(two==one) {
+	two = r.nextInt(100)+1;
+	
+}
+int three = r.nextInt(100)+1;
+while(three==one || three==two) {
+	three = r.nextInt(100)+1;
+	
+}
+System.out.print("뽑힌 숫자는" + one + ","+ two + ","+ three);
+
+
+
+
+
+    
+    
+    
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
