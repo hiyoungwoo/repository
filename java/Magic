@@ -1,0 +1,52 @@
+package homework;
+
+import java.util.*;
+
+public class 마법사게임 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		Random r = new Random();
+		
+		System.out.println("공격하려면 1을 누르세요. 그 외 숫자를 누르면 종료합니다.");
+		int a = s.nextInt();
+		int b = r.nextInt(11)+15;
+		int c = r.nextInt(11)+5;
+		int m = 10;
+		int u = 20;
+		int t = m - c;
+		int o = u - b;
+		
+		
+		if(a==1) {
+		if(t<=0 && o>0 ) System.out.println("마법사의 HP는 "+ t + " 마법사가 죽었습니다.\n전사의 HP는" + o );
+		if(o<=0 && t>0) System.out.println("마법사의 HP는 "+ t +"\n전사의 HP는 "+ o + "전사가 죽었습니다." );
+		if(t<=0 && o<=0) 	System.out.println("동시에 죽었습니다." );
+		if(t>0 && o>0)  
+			System.out.println("마법사의 HP는"+ t + "전사의 HP는 "+ o 
+			+ "둘 다 안죽었습니다." );
+		}
+		else System.out.println("종료합니다.");
+	
+		
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+	
+	
+	
+	
+}
