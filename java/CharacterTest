@@ -1,0 +1,31 @@
+package week10;
+
+public class CharacterTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Character ryu = new Character("류", 100, 20);
+		Character ken = new Character("켄", 200, 10);
+	
+		
+		
+		
+		while(true) {
+	    ken.hp = ken.hp - ryu.attack(20);
+        ryu.hp = ryu.hp - ken.attack(10);
+		
+		boolean isAlive = ryu.attack(ken);
+		if(isAlive == false)break;
+	
+		
+		
+		
+		}
+		
+		
+		
+		
+		
+	}
+
+}
