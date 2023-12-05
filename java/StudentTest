@@ -1,0 +1,40 @@
+package week10;
+
+import java.util.*;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		System.out.println("학생수를 입력하세요.");
+		int num = s.nextInt();
+		Student st[] = new Student [num];
+		
+		
+		
+		for(int i= 0; i < st.length; i++) {
+		System.out.println("이름, 국어, 영어, 수학 성적을 입력하시오.");
+	    String name = s.next();
+	    int korean = s.nextInt();
+	    int english = s.nextInt();
+		int math = s.nextInt();
+		
+		st[i] = new Student(name,korean,english,math);
+		st[i].studentavg();
+		
+	    
+		
+		
+		
+		
+		
+		}
+		
+		
+		
+		
+		
+	}
+
+}
