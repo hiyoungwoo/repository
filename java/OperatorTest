@@ -1,0 +1,34 @@
+package homework;
+import java.util.Scanner;
+public class OperatorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner (System.in);
+		
+		System.out.println(" 초를 입력하세요.");
+		int num = s.nextInt();
+		
+		int min = num / 60;
+		int sec = num % 60;
+		
+		int hour = min / 60;
+		min = min % 60;
+	
+		System.out.println(hour + "시간"+ min + "분"+sec+"초");
+
+        String str1 = "안녕";
+        String str2 = "안녕";
+        
+        boolean eq = str1.equals(Str2);
+        
+        if(str1.equals(Str2)) {
+        	
+        	 	
+        }else {
+     
+     
+	}
+
+}
+}
