@@ -1,0 +1,52 @@
+package 반복문;
+import java.util.*;
+public class 로또번호 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Random r = new Random();
+
+
+
+int one = r.nextInt(45)+1;
+
+int two = r.nextInt(45)+1;
+while(two==one) {
+	two = r.nextInt(45)+1;
+	
+}
+int three = r.nextInt(45)+1;
+while(three==one || three==two) {
+	three = r.nextInt(45)+1;
+	
+}
+
+int four = r.nextInt(45)+1;
+while(four==one || three==two || four ==three) {
+	four = r.nextInt(45)+1;
+	
+}
+int a = r.nextInt(45)+1;
+while(a==one || a==two || a==three || a==four ) {
+	a = r.nextInt(45)+1;
+	
+}
+int b = r.nextInt(45)+1;
+while(b==one || b==two || b== three || b==four || b==a) {
+	b = r.nextInt(45)+1;
+	
+}
+
+
+
+
+System.out.print(  one + ","+ two + ","+ three + "," + four+","+a+","+b );		
+		
+		
+		
+		
+		
+		
+	}
+
+}
